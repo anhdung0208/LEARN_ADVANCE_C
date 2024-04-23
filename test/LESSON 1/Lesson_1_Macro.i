@@ -1591,11 +1591,29 @@ void __attribute__((__cdecl__)) __mingw_str_free(void *ptr);
   __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _fread_nolock_s(void *_DstBuf,size_t _DstSize,size_t _ElementSize,size_t _Count,FILE *_File);
 # 1650 "C:/msys64/ucrt64/include/stdio.h" 2 3
 # 2 "Lesson_1_Macro.c" 2
+# 1 "fucntion.h" 1
 
 
-# 3 "Lesson_1_Macro.c"
+
+# 3 "fucntion.h"
+void print_test()
+{
+ printf("haha");
+
+}
+# 3 "Lesson_1_Macro.c" 2
+# 24 "Lesson_1_Macro.c"
+void test1() { printf("cmd");};
+void test2() { printf("cmd");};
+
 int main()
 {
-    printf("haha");
+     test1();
+     test2();
+
+
+
+
+
 
 }

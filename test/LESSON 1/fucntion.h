@@ -1,6 +1,7 @@
 #include<stdio.h>
 
-void print()
+void print_test()
 {
  printf("haha");
+ 
 }
