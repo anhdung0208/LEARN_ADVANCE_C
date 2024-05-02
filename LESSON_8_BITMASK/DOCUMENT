@@ -1,0 +1,10 @@
+else if (condition & TSHIRT)\
+       {\
+         printf("TSHIRT");\
+       }else if (condition & HAT)\
+       {\
+         printf("HAT");\
+       }else if (condition & SHOSE)\
+       {\
+         printf("SHOSE");\
+       }\

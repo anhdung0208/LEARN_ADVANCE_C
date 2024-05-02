@@ -1,7 +1,7 @@
-# 0 "Lesson_3_bitmask.c"
+# 0 "Practice_MOTOR.c"
 # 0 "<built-in>"
 # 0 "<command-line>"
-# 1 "Lesson_3_bitmask.c"
+# 1 "Practice_MOTOR.c"
 # 1 "C:/msys64/ucrt64/include/stdio.h" 1 3
 # 9 "C:/msys64/ucrt64/include/stdio.h" 3
 # 1 "C:/msys64/ucrt64/include/corecrt_stdio_config.h" 1 3
@@ -1590,28 +1590,37 @@ void __attribute__((__cdecl__)) __mingw_str_free(void *ptr);
 # 912 "C:/msys64/ucrt64/include/sec_api/stdio_s.h" 3
   __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _fread_nolock_s(void *_DstBuf,size_t _DstSize,size_t _ElementSize,size_t _Count,FILE *_File);
 # 1650 "C:/msys64/ucrt64/include/stdio.h" 2 3
-# 2 "Lesson_3_bitmask.c" 2
+# 2 "Practice_MOTOR.c" 2
+
+# 2 "Practice_MOTOR.c"
+typedef int PIN;
 
 
-
-
-
-
-
-# 8 "Lesson_3_bitmask.c"
-void enable_feature(int* option,int feature)
+typedef struct {
+    void (*start)(int);
+    void (*stop)(int);
+    void (*changSpeed)(int, int);
+}controlMotor;
+# 18 "Practice_MOTOR.c"
+void startMotor(int GPIO)
 {
-    *option != feature;
+    printf("\nON MOTOR");
+}
 
+void stopMotor(int GPIO)
+{
+    printf("\nOFF MOTOR");
+}
 
-
-
+void changeMotor(int GPIO, int SPEED)
+{
+    printf("\nSPEED CHANGE:%dd",SPEED);
+}
 
 
 
 int main()
 {
-   int option = 0;
+do { PIN PIN_motor_A = 23; controlMotor motor_A = {&startMotor, &stopMotor, &changeMotor}; } while(0);
 
-   enable_feature(option,1 << 0);
 }
