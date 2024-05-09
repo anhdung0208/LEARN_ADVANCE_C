@@ -12,11 +12,6 @@ typedef struct {
 //     PIN PIN_##nameMotor = PIN_NUMBER;         \
 //     controlMotor nameMotor = {&startMotor, &stopMotor, &changeMotor}; 
 
-
-  
-
-
-
 void startMotor(int GPIO)
 {
     printf("\nON MOTOR");
