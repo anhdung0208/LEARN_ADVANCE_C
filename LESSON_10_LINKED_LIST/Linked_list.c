@@ -60,7 +60,7 @@ void push_back(Node** head,int value)
 void pop_between(Node** head, int target)
 {
     
-    if (head == NULL)
+    if (*head == NULL)
     {
         printf("No element in LinkedList");
     }else

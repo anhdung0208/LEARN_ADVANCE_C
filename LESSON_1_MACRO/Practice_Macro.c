@@ -1,6 +1,5 @@
 // #include<stdio.h>
 
-
 // #define HANDLE_ERROR(condition, name_action, message) \
 // do                                                \
 // {                                                  \
@@ -9,9 +8,6 @@
 //         name_action(message);                         \ 
 //      }                                                 \
 // } while(0)
-
-
-
 
 
 // void printError(char* messege)
